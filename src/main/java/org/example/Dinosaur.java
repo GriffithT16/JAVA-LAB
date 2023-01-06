@@ -1,7 +1,7 @@
 package org.example;
 
 public class Dinosaur {
-    public String name;
+    public static String name;
     public Weapon weapon;
 
     public Dinosaur(Weapon weapon) {
@@ -9,7 +9,7 @@ public class Dinosaur {
         this.weapon = weapon;
     }
     public void Attack(Robot robot_one){
-        System.out.println(this.name + " attacks with their " + this.weapon.name + " for " + this.weapon.power + " damage!");
+        System.out.println(this.name + " attacks " + (Robot.name) + " with their " + this.weapon.name + " for " + this.weapon.power + " damage!");
 
 
     }
